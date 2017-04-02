@@ -1,0 +1,18 @@
+language: go
+sudo: false
+go:
+  - 1.8
+  - tip
+before_install:
+  - go get github.com/golang/dep/...
+  - go get golang.org/x/tools/cmd/cover
+install:
+  - $GOPATH/bin/dep ensure
+script:
+  - go test
+branches:
+  only:
+    - master
+after_success:
+  - gox -output "dist/{{.OS}}_{{.Arch}}_{{.Dir}}"
+  - ghr --username tsuyoshiwada --token $GITHUB_TOKEN --replace `grep 'Version =' version.go | sed -E 's/.*"(.+)"$$/\1/'` dist/

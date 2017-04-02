@@ -1,0 +1,78 @@
+{
+    "memo": "6a40a8e7e4f87e27eb27332480aeb2a98d5d62fc7fca1b8a3ea79e7ecc1a35fa",
+    "projects": [
+        {
+            "name": "github.com/alecthomas/template",
+            "branch": "master",
+            "revision": "a0175ee3bccc567396460bf5acd36800cb10c49c",
+            "packages": [
+                ".",
+                "parse"
+            ]
+        },
+        {
+            "name": "github.com/alecthomas/units",
+            "branch": "master",
+            "revision": "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/briandowns/spinner",
+            "branch": "master",
+            "revision": "1603fb1560c6920aa4df5891ee75ceb789d50ba4",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/fatih/color",
+            "version": "v1.4.1",
+            "revision": "9131ab34cf20d2f6d83fdc67168a5430d1c7dc23",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/mattn/go-colorable",
+            "version": "v0.0.7",
+            "revision": "d228849504861217f796da67fae4f6e347643f15",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "github.com/mattn/go-isatty",
+            "version": "v0.0.2",
+            "revision": "fc9e8d8ef48496124e79ae0df75490096eccf6fe",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "golang.org/x/sys",
+            "branch": "master",
+            "revision": "9a7256cb28ed514b4e1e5f68959914c4c28a92e0",
+            "packages": [
+                "unix"
+            ]
+        },
+        {
+            "name": "gopkg.in/alecthomas/kingpin.v2",
+            "version": "v2.2.3",
+            "revision": "e9044be3ab2a8e11d4e1f418d12f0790d57e8d70",
+            "packages": [
+                "."
+            ]
+        },
+        {
+            "name": "gopkg.in/kyokomi/emoji.v1",
+            "version": "v1.5",
+            "revision": "7e06b236c489543f53868841f188a294e3383eab",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}
