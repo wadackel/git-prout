@@ -26,6 +26,11 @@ func createTestRepo() func() {
 	_, err = exec.Command("git", "init").Output()
 	checkPanic(err)
 
+	_, err = exec.Command("git", "config", "--local", "user.name", "'testuser'").Output()
+	checkPanic(err)
+	_, err = exec.Command("git", "config", "--local", "user.email", "'testuser@email.com'").Output()
+	checkPanic(err)
+
 	tmpfile := "README.md"
 	readme, err := os.Create(tmpfile)
 	checkPanic(err)
@@ -34,7 +39,7 @@ func createTestRepo() func() {
 
 	_, err = exec.Command("git", "add", "-A").Output()
 	checkPanic(err)
-	_, err = exec.Command("git", "commit", "-m", "testing").Output()
+	_, err = exec.Command("git", "commit", "-m", "'testing'").Output()
 	checkPanic(err)
 	_, err = exec.Command("git", "remote", "add", "origin", "https://github.com/tsuyoshiwada/git-prout.git").Output()
 	checkPanic(err)

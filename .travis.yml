@@ -6,10 +6,12 @@ go:
 before_install:
   - go get github.com/golang/dep/...
   - go get golang.org/x/tools/cmd/cover
+  - go get github.com/mitchellh/gox
+  - go get github.com/tcnksm/ghr
 install:
   - $GOPATH/bin/dep ensure
 script:
-  - go test
+  - go test -v
 branches:
   only:
     - master
