@@ -48,17 +48,17 @@ $ go get -u github.com/tsuyoshiwada/git-prout
 ## Usage
 
 ```bash
-$ git-prout [<flags>] <number>
+$ git-prout [<options>] <number>
 
-Flags:
+Options:
   -h, --help             Show context-sensitive help (also try --help-long and --help-man).
+      --version          Show application version.
       --debug            Enable debug mode.
   -r, --remote="origin"  Reference of remote.
   -f, --force            Force execute pull or checkout.
-  -q, --quiet            Silencey any progress and errors.
-      --version          Show application version.
+  -q, --quiet            Silence any progress and errors (other than parse error).
 
-Args:
+Arguments:
   <number>  ID number of pull request
 
 ```
