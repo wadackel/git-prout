@@ -46,7 +46,7 @@ func newSpinner(w io.Writer, msg string, complete string) *spinner.Spinner {
 	s.Writer = w
 	s.Color("cyan")
 	s.Suffix = " " + msg + "..."
-	s.FinalMSG = blue(string(0x2713)) + " " + green(complete) + "\n"
+	s.FinalMSG = blue(fmt.Sprint(0x2713)) + " " + green(complete) + "\n"
 
 	return s
 }
